@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = 1030;
+var port = process.env.PORT || 1030;
 
 require('./config/middleware.js') (app,express);
 require('./config/routes.js') (app,express);
