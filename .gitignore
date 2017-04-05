@@ -1,0 +1,8 @@
+node_modules/
+client/lib/
+
+# Build files
+dist/
+
+
+## API keys ##
