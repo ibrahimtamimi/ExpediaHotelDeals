@@ -1,0 +1,31 @@
+<div >
+  <h1>By Date</h1>
+
+<script>
+   angular.module('dateInputExample', [])
+     .controller('DateController', ['$scope', function($scope) {
+       $scope.example = {
+         value: new Date(2013, 9, 22)
+       };
+     }]);
+</script>
+<form name="myForm" >
+   <label for="exampleInput">Pick a date </label>
+   <input type="date" id="exampleInput" name="input" ng-model="dateValue"
+       placeholder="yyyy-MM-dd" required />
+   <div >
+
+   
+</form>
+
+  <button class="btn btn-default" ng-click = 'getByMaxDate(dateValue)'>get By Max Trip Date</button>
+  <button class="btn btn-default" ng-click = 'getByMinDate(dateValue)'>get By Min Trip Date</button>
+  
+  <ul ng-repeat = "hotel in Hotels" >
+  	<li style="margin-left: 50px">
+  		<p>{{hotel.hotelInfo.hotelName}}</p>
+  		<img ng-src={{hotel.hotelInfo.hotelImageUrl}}>
+  	</li>
+  </ul>
+
+</div>

@@ -1,0 +1,12 @@
+<div >
+  <h1>Hotels Info</h1>
+  <button class="btn btn-default" ng-click = 'getDataAllHotel("here")'>get all hotels</button>
+  
+  <ul ng-repeat = "hotel in Hotels" >
+  	<li style="margin-left: 50px">
+  		<p>{{hotel.hotelInfo.hotelName}}</p>
+  		<img ng-src={{hotel.hotelInfo.hotelImageUrl}}>
+  	</li>
+  </ul>
+
+</div>

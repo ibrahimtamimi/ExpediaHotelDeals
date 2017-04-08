@@ -1,0 +1,14 @@
+<div >
+  <h1>Get By Region id </h1>
+  <input type="textbox" ng-model = "input">
+  <button class="btn btn-default" ng-click ='getDataByID(input)'>get Data</button>
+  <ul ng-show = "flag" ng-repeat = "hotel in Target" >
+  	<li style="margin-left: 50px">
+  		<p>{{hotel.hotelInfo.hotelName}}</p>
+  		<img ng-src={{hotel.hotelInfo.hotelImageUrl}}>
+  	</li>
+  </ul>
+  <ul style="background: red">
+  	{{msg}}
+  </ul>
+</div>
