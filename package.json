@@ -20,8 +20,13 @@
   "dependencies": {
     "angular-route": "^1.6.4",
     "body-parser": "^1.17.1",
+    "chai": "^3.5.0",
     "express": "^4.15.2",
     "morgan": "^1.8.1",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "supertest": "^3.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
   }
 }

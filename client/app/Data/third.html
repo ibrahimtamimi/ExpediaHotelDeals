@@ -20,8 +20,8 @@
 
   <button class="btn btn-default" ng-click = 'getByMaxDate(dateValue)'>get By Max Trip Date</button>
   <button class="btn btn-default" ng-click = 'getByMinDate(dateValue)'>get By Min Trip Date</button>
-  
-  <ul ng-repeat = "hotel in Hotels" >
+  {{Target}}
+  <ul ng-repeat = "hotel in Target">
   	<li style="margin-left: 50px">
   		<p>{{hotel.hotelInfo.hotelName}}</p>
   		<img ng-src={{hotel.hotelInfo.hotelImageUrl}}>
