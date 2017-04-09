@@ -13,7 +13,7 @@ describe('Expeadia API ', function () {
         if (err) {
           throw new Error(err)
         }
-        expect(resp.body).to.be.an('array')
+        expect(resp.body).to.be.an('object')
         done()
       })
   })
